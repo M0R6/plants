@@ -22,7 +22,7 @@ export default {
   target: 'static',
   target: 'static',
   router: {
-    base: '/morganroomrecords/'
+    base: '/plants/'
   },
   ssr: false,
 

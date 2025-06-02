@@ -1,6 +1,6 @@
 <template>
   <div class="josef">
-    <div id="disini" class="w-screen h-[56px] border-0 p-1 m-0 bg-black" :class="{ 'hidden': hidden }">
+    <!-- <div id="disini" class="w-screen h-[56px] border-0 p-1 m-0 bg-black" :class="{ 'hidden': hidden }">
       <div @click="hideIt" class="cursor-pointer">
         <div class="inline-block p-2">
           <font-awesome-icon class="h-6 ml-1 mt-1 cursor-pointer text-white" icon="xmark" />
@@ -39,46 +39,74 @@
         </li>
       </ul>
       </div>
-    </nav>
+    </nav> -->
     <div class="bg-container mx-auto w-screen h-screen border-0 p-0 m-0" :style="backgroundStyle">
       <div class="flex-auto text-center text-4xl">
-        <a href="">
+        <div class="flex flex-col items-center justify-center h-full">
           <!-- <h1 class="pt-[15px] text-white josef2">
             <span>Morgan</span> <br />
             <span>Room</span> <br />
             <span>Records</span>
           </h1> -->
-          <v-img class="mx-auto mt-3 d-flex justify-center" height="300" width="300" :src="require('~/assets/images/mrr.svg')"></v-img>
-        </a>
-      </div>
-      <div class="mx-auto justify-center flex">
-        <!-- <iframe width="560" height="202" src="https://www.bandlab.com/embed/?id=77dde34a-1640-ef11-86c3-000d3a42581b" allowfullscreen></iframe> -->
-      </div>
-      <div>
-        <h1 class="pt-10 text-center text-3xl text-white josef2">MORG's Music</h1>
-      </div>
-      <div id="spotify">
-        <h1 class="pt-10 text-center text-3xl text-white josef2">Listen on Spotify</h1>
-        <div class="flex justify-center">
-          <iframe
-            src="https://open.spotify.com/embed/track/73TDTh7iFO0mdhfLs8lokn?utm_source=generator"
-            width="300"
-            height="380"
-            frameborder="0"
-            allowtransparency="true"
-            allow="encrypted-media"
-            class="rounded-lg pt-3"
-          ></iframe>
+          <div class="flex justify-center items-center flex-col">
+            <a href="https://instagram.com/nrfntr" target="_blank">
+              <v-img class="mx-auto mt-3 d-flex justify-center" height="300" width="300" :src="require('~/assets/images/mrgn.svg')"></v-img>
+            </a>
+            <h1 class="m-7 text-center text-3xl text-white josef2">in colaboration with</h1>
+            <a href="https://www.instagram.com/agrisouvenir.id/" target="_blank"> 
+              <v-img class="mx-auto mt-3 d-flex justify-center" height="150" width="275" :src="require('~/assets/images/agri.svg')"></v-img>
+            </a>
+          </div>
         </div>
       </div>
-      <div id="youtube">
-        <h1 class="pt-10 text-center text-3xl text-white josef2">Latest YouTube Videos</h1>
-        <YouTubeVideos :videos="videos"/>
+      <div>
+        <div class="flex justify-center items-center mt-10 p-4">
+          <div class="max-w-md p-6 bg-white rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold text-gray-800 text-center mb-4">Terima Kasih</h2>
+            <p class="text-gray-600 text-center">
+                Bapak-Ibu Guru pengampu pelajaran jurusan Rekayasa Perangkat Lunak: Pak Rusdi, Pak Haris, Bu Diah, Bu Titi Sari, Bu Reny, Bu Rosyi, Bu Dinda atas bimbingan dan dukungannya dalam proses pembelajaran di Skansaba selama 3 tahun ini. Semoga menjadi
+                amal jariyah yang terus mengalir pahalanya, dan semoga Bapak-Ibu selalu diberikan kesehatan, kebahagiaan, serta keberkahan dalam setiap langkah kehidupan. Aamiin
+            </p>
+            <div class="mt-6 text-center">
+              <p class="text-gray-600">- morgan</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- <div>
-        <h1 class="pt-10 text-center text-3xl text-white josef2">Tracks on BandLab</h1>
-        <BandLabEmbed :tracks="tracks" />
-      </div> -->
+      <div>
+        <div class="flex justify-center items-center mt-5 p-4">
+          <div class="max-w-md p-6 bg-white rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold text-gray-800 text-center mb-4">Terima Kasih</h2>
+            <p class="text-gray-600 text-center">
+              Teruntuk teman-teman curhatku (wkwk), makasih ya ges sudah selalu mendengar keluh kesahku. Maaf suka bebal :-)
+            </p>
+            <div class="mt-6 text-center">
+              <p class="text-gray-600">- morgan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex justify-center items-center mt-5 p-4">
+          <div class="max-w-md p-6 bg-white rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold text-gray-800 text-center mb-4">Plant care tips:</h2>
+            <p class="text-gray-600 text-center">
+                1. Light it up in so many ways<br>
+                2. Hydrate and forget about it.<br>
+                3. Keep it well fed.<br>
+
+                // <br>
+                
+                1. Berikan cahaya dengan berbagai cara<br>
+                2. Sirami dan lupakan sejenak.<br>
+                3. Pastikan diberi nutrisi yang cukup.<br>
+            </p>
+            <div class="mt-6 text-center">
+                <p class="text-gray-600">Happy Growing!</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <footer id="contact">
       <Footer />
@@ -136,7 +164,7 @@ export default {
   computed: {
     backgroundStyle() {
       return {
-        backgroundImage: `url(${require('~/assets/images/bg.jpg')})`,
+        backgroundImage: `url(${require('~/assets/images/plants.svg')})`,
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center center',
         backgroundAttachment: 'fixed',

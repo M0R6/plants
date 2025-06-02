@@ -1,8 +1,7 @@
 <template>
   <footer class="footer">
     <div class="content has-text-centered">
-      <p class="mb-2">
-        Feel free to reach out via email at <a class="hover:text-blue-300 font-black text-xl" href="mailto:halomrgn@gmail.com">halomrgn@gmail.com</a>.<br>
+      <p class="mb-2"><a class="hover:text-blue-300 font-black text-xl" href="mailto:halomrgn@gmail.com">halomrgn@gmail.com</a>.<br>
       </p>
       <div class="social-icons">
         <a href="https://instagram.com/nrfntr" target="_blank">
@@ -28,8 +27,8 @@
         </a>
       </div>
       <p>
-        &copy; 2024 <a class="hover:text-blue-300" href="https://morgann.me/" target="_blank">MORG</a><br>
-        Background picture by <a class="hover:text-blue-300" href="https://unsplash.com/@introspectiveds" target="_blank">Eric Mclean</a>
+        &copy; 2025 <a class="hover:text-blue-300" href="https://morgann.me/" target="_blank">MORG</a><br>
+        <!-- Background picture by <a class="hover:text-blue-300" href="https://unsplash.com/@introspectiveds" target="_blank">Eric Mclean</a> -->
       </p>
     </div>
   </footer>
